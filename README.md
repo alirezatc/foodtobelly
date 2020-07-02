@@ -85,16 +85,68 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
     "company": "SLG",
     "email": "alireza.tc@gmail.com",
     "phone": "+1 604-727-6565",
-    "address": "Toronto",
-    "about": "Persevered Front End Developer",
-    "latitude": 43.6532, 
-    "longitude": 79.3832,
+    "title": "Front End Developer",
+    "location": {
+      "address": "2712 Broadway St",
+      "postalCode": "CA 94115",
+      "city": "San Francisco",
+      "countryCode": "US",
+      "region": "California"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "john",
+        "url": "http://twitter.com/john"
+      }
+    ],
     "tags": [
       "Front End Development",
       "UI Development",
       "UI/UX Design"
     ],
     "key skills": ["HTML5", "CSS3", "Bootstrap", "ES6", "JavaScript", "React", "MVC", "jQuery", "AngularJS", "wordpress", "GIT", "TFS", "Piwik", "project management", "YouTrack", "responsive web design", "mobile first"],
+    "working experience": [
+      {
+        "company_id": "001",
+        "company_name": "SLG",
+        "position": "React Developer",
+        "start_date": "2020-01-12",
+        "end_date": "",
+        "currently_working": "true",
+        "job_description": [
+          "description 1",
+          "description 2",
+          "description 3"
+        ]
+      },
+      {
+        "company_id": "002",
+        "company_name": "Jame Jam",
+        "position": "Front End Developer",
+        "start_date": "2012-03-01",
+        "end_date": "2018-03-01",
+        "currently_working": "false",
+        "job_description": [
+          "description 1",
+          "description 2",
+          "description 3"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "institution": "University Canada West",
+        "area": "Master of Business Admnistration",
+        "study_type": "Masters",
+        "start_date": "2018-03-01",
+        "end_date": "2019-07-01",
+        "gpa": "3.67",
+        "courses": [
+          "IT for Managers", "Strategic Management"
+        ]
+      }
+    ],
     "friends": [
       {
         "id": 126478,
