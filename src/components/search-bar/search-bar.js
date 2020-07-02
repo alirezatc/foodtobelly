@@ -33,7 +33,7 @@ class SearchBar extends React.Component {
     return (
       <form className="SearchBar">
         <div className="SearchBar-fields">
-          <input placeholder="Enter city" onChange={this.handleCityChange} />
+          <input placeholder="City" onChange={this.handleCityChange} />
           <input placeholder="Refine: name/ address/ area" onChange={this.handleRefineChange} />
         </div>
         <div className="SearchBar-submit">

@@ -15,18 +15,18 @@ class Restaurant extends React.Component {
     const { business } = this.props;
 
     return (
-      <div className="Restaurant">
+      <div className="restaurant">
         <div className="image-container">
           <img src={restaurantIcon} alt={business.name} />
         </div>
-        <div className="Restaurant-information">
+        <div className="restaurant-information">
           <h2>{business.name}</h2>
-          <div className="Restaurant-address">
+          <div className="restaurant-address">
             <p>{business.address}</p>
             <p>{`${business.state}. ${business.city} ${business.zipCode}`}</p>
             <p className="area">{business.area}</p>
           </div>
-          <div className="Restaurant-price">
+          <div className="restaurant-price">
             <h3 className="price">{this.priceViewer(business.price)}</h3>
           </div>
         </div>

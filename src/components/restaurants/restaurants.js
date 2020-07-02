@@ -5,7 +5,7 @@ import Restaurant from '../restaurant/restaurant';
 class Restaurants extends React.Component {
   render() {
     return (
-      <div className="RestaurantList">
+      <div className="restaurant-list">
         {
           this.props.businesses.map(item => {
             return <Restaurant business={item} key={item.id}/>

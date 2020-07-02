@@ -23,8 +23,8 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
-        <nav><h1>FoodToBelly</h1></nav>
+      <div className="app">
+        <nav><h1>FoodToBelly</h1> <span className="logotype">No matter where you are</span></nav>
         <SearchBar searchFoodToBelly={this.searchFoodToBelly}/>
         <Restaurants businesses={this.state.businesses} />
       </div>

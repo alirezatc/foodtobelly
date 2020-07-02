@@ -1,4 +1,4 @@
-.Restaurant {
+.restaurant {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -6,65 +6,70 @@
   margin: 0 .5rem 2.3rem .5rem;
   border: 1px solid #eee;
   border-radius: 6px;
+  transition: all ease-in-out .2s;
 }
 
-/* .Restaurant .image-container {
-  margin-bottom: 1rem;
-} */
+.restaurant:hover {
+  box-shadow: 0px 3px 3px -2px rgba(0,0,0,0.2), 0px 3px 4px 0px rgba(0,0,0,0.14), 0px 1px 8px 0px rgba(0,0,0,0.12);
+}
 
-.Restaurant h2 {
+.restaurant .image-container {
+  height: 10rem;
+}
+
+.restaurant h2 {
   color:#a7080b;
-  margin-bottom: .5rem;
+  text-align: center;
   font-size: 1.25rem;
   font-weight: 600;
+  margin-bottom: .5rem;
 }
 
-.Restaurant .area {
+.restaurant .area {
   font-weight: 300;
   margin-top:.2rem;
 }
 
-.Restaurant-information {
+.restaurant-information {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 1rem;
 }
 
-.Restaurant-information p {
+.restaurant-information p {
   line-height: 1.25rem;
 }
 
-.Restaurant-address {
+.restaurant-address {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.Restaurant-address h3 {
+.restaurant-address h3 {
   margin-top:.75rem;
   font-weight: 300;
 }
 
-.Restaurant-price {
+.restaurant-price {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: right;
 }
 
-.Restaurant-price h3 {
-  color: #427b0e; 
-  font-weight: 600;
-}
-
-.Restaurant-price .price {
+.restaurant-price h3 {
   font-size: .88rem;
   line-height: 1rem;
+  color: #333; 
+  font-weight: 600;
+  margin-top: 0.5rem;
+  letter-spacing: 0.1rem;
 }
 
 @media only screen and (min-width: 575px) {
-  .Restaurant .image-container {
-    height: 18rem;
+  .restaurant .image-container {
+    height: 14rem;
   }
 }
