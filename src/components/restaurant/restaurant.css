@@ -1,0 +1,70 @@
+.Restaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 18rem;
+  margin: 0 .5rem 2.3rem .5rem;
+  border: 1px solid #eee;
+  border-radius: 6px;
+}
+
+/* .Restaurant .image-container {
+  margin-bottom: 1rem;
+} */
+
+.Restaurant h2 {
+  color:#a7080b;
+  margin-bottom: .5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.Restaurant .area {
+  font-weight: 300;
+  margin-top:.2rem;
+}
+
+.Restaurant-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.Restaurant-information p {
+  line-height: 1.25rem;
+}
+
+.Restaurant-address {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Restaurant-address h3 {
+  margin-top:.75rem;
+  font-weight: 300;
+}
+
+.Restaurant-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+}
+
+.Restaurant-price h3 {
+  color: #427b0e; 
+  font-weight: 600;
+}
+
+.Restaurant-price .price {
+  font-size: .88rem;
+  line-height: 1rem;
+}
+
+@media only screen and (min-width: 575px) {
+  .Restaurant .image-container {
+    height: 18rem;
+  }
+}

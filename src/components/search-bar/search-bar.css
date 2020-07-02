@@ -1,0 +1,95 @@
+.SearchBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('./background_search_mobile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25rem;
+}
+
+.SearchBar-fields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
+.SearchBar-fields input {
+    width: 15rem;
+    padding: 1rem;
+    border: 1px solid #fff;
+    border-radius: 2rem;
+    font-size: .75rem;
+    font-weight: 500;
+    margin-right: 0;
+    margin-bottom: .86rem;
+}
+
+.SearchBar-fields input:last-child {
+    margin-right: 0;
+}
+
+.SearchBar-submit {
+    text-align: center;
+}
+
+.SearchBar-submit button {
+    min-width: 12rem;
+    font-size: 1rem;
+    padding: 1rem 1.75rem;
+    border-radius: 2rem;
+    background-color: rgba(228, 27, 31, 0.86);
+    color: #ffffff;
+    border: none;
+    font-weight: 600;
+    transition: background-color .5s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.SearchBar-submit button:hover {
+    cursor: pointer;
+    background-color: #a7080b;
+}
+
+.SearchBar-submit button:focus {
+    outline: none;
+}
+
+@media only screen and (min-width: 575px) {
+    .SearchBar {
+        background-image: url('./background_search_desktop.jpg');
+    }
+
+    .SearchBar-fields {
+        flex-direction: row;
+        align-items: initial;
+        margin-bottom: 0;
+    }
+
+    .SearchBar-fields input {
+        margin-right: 0;
+        margin-bottom: 0;
+        width:19.9rem;
+    }
+
+    .SearchBar-fields input:first-child {
+        border-radius: 0;
+        border-top-left-radius: 2rem;
+    }
+
+    .SearchBar-fields input:last-child {
+        border-left: 1px solid #ccc;
+        border-radius: 0;
+        border-top-right-radius: 2rem
+    }
+
+    .SearchBar-submit button {
+        width: 44rem;
+        border-radius: 0;
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+    }
+}

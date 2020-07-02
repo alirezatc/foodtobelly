@@ -1,26 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
+import Restaurants from './components/restaurants/restaurants';
+import SearchBar from './components/search-bar/search-bar';
+import RestaurantService from './services/service';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    
+    this.state = {
+      businesses: []
+    }
 
+    this.searchFoodToBelly = this.searchFoodToBelly.bind(this);
+  }
+
+  searchFoodToBelly(city, refine) {
+    RestaurantService.search(city, refine).then(businesses => {
+      this.setState({businesses: businesses});
+    })
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <nav><h1>FoodToBelly</h1></nav>
+        <SearchBar searchFoodToBelly={this.searchFoodToBelly}/>
+        <Restaurants businesses={this.state.businesses} />
+      </div>
+    );
+  }
+}
 export default App;
