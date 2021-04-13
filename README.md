@@ -74,7 +74,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 1. I spent 6 hours to deploy this project. I would use Jest for test.
 2. I believe the greatest feature of React is having a Virtual DOM and only updating components when they get updated. You can review my article about great features of React and its comparison with Angular: https://www.linkedin.com/pulse/react-vs-angular-which-one-right-decision-your-front-end-tayari/ 
 3. If I bump into a slow performance in the software the first thing that I check is network tab of the browswer to see if any requests takes more than usual time. However, performance testing is a comprehensive topic and should be considered in the Unit Testing. Some of the things to consider are: Load testing, Stress testing, Soak testing, Spike testing, Breakpoint testing, Configuration testing, Isolation testing, Internet testing. Plus, for the Front End, I use reports from Gtmetrix and Pingdom tools.
-4. If I wanted to revise the JSON, I would double check the image_url, put the city, state, area, and country inside another object called location or address. Also, in the assignement it is written to show the type of restaurant. However, the API does not provide it
+4. If I wanted to revise the JSON, I would double check the image_url, put the city, state, area, and country inside another object called location or address. Also, I would suggest we add the restaurant_type to the API.
 5. 
 ```json
 [
@@ -83,8 +83,8 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
     "name": "Alireza Tayari",
     "gender": "Male",
     "company": "SLG",
-    "email": "alireza.tc@gmail.com",
-    "phone": "+1 604-727-6565",
+    "email": "ali***@gmail.com",
+    "phone": "+1 604-*****65",
     "title": "Front End Developer",
     "location": {
       "address": "2712 Broadway St",
@@ -158,7 +158,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
       }
     ],
     "greeting": "Hello, welcome to Alireza Tayari json world!",
-    "favorite fruit": "banana"
+    "favorite fruit": "strawberry"
   }
 ]
 ```
